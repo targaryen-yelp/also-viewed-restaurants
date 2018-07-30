@@ -1,0 +1,55 @@
+{
+  "name": "qa-sidebar",
+  "version": "1.0.0",
+  "description": "Questions &amp; Answers and Nearby Restaurants in bottom sidebar",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./server",
+    "build": "webpack -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-jest": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/targaryen-yelp/qa-sidebar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/targaryen-yelp/qa-sidebar/issues"
+  },
+  "homepage": "https://github.com/targaryen-yelp/qa-sidebar#readme",
+  "dependencies": {
+    "airbnb-browser-shims": "^3.0.0",
+    "axios": "^0.18.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^7.1.5",
+    "babel-preset-airbnb": "^2.5.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.18.3",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "faker": "^4.1.0",
+    "file-loader": "^1.1.11",
+    "image-webpack-loader": "^4.3.1",
+    "jest": "^23.4.1",
+    "react": "^16.4.1",
+    "react-css-modules": "^4.7.4",
+    "react-dom": "^16.4.1",
+    "react-icons-kit": "^1.1.7",
+    "react-test-renderer": "^16.4.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.10.0"
+  }
+}
