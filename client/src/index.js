@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import AlsoViewed from './AlsoViewed';
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<AlsoViewed />, document.getElementById('alsoViewed'));

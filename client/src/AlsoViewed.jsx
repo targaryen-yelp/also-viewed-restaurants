@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
-import PlaceList from './PlaceList.jsx';
+import PlaceList from './PlaceList';
 
-export default class App extends Component {
+export default class AlsoViewed extends Component {
   render () {
     return (
       <div>
