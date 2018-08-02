@@ -6,7 +6,8 @@ const controller = {
     const { mainCategory } = req.query;
     console.log('req: ', mainCategory);
     Restaurant.find({
-      mainCategory: mainCategory
+      // mainCategory: mainCategory
+      mainCategory: 'et'
     }, (err, found) => {
       if (err) {console.error('error getting data from db')}
       else {
