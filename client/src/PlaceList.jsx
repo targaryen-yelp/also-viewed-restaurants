@@ -72,7 +72,7 @@ export default class PlaceList extends Component {
         mainCategory: mainCategory
       }
     }
-    axios.get('/api/yelp', payload)
+    axios.get('http://localhost:9001/api/yelp', payload)
     .then(res => {
       this.setState({places: res.data.slice(0,10)});
     })
@@ -142,7 +142,7 @@ export default class PlaceList extends Component {
         <StyledUl>
           <StyledLi><Links href="/ADD-LINK">Things to do in {this.state.city}</Links></StyledLi>
         </StyledUl>
-        {/* <button onClick={(e) => {this.createData(e)}}>Click To Create Fake Data</button> */}
+        <button onClick={(e) => {this.createData(e)}}>Click To Create Fake Data</button>
       </StyledBodyDiv>
     )
   }
