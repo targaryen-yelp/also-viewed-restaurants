@@ -77,7 +77,7 @@ export default class PlaceList extends Component {
     }
     axios.get('http://localhost:9001/api/yelp', payload)
     .then(res => {
-      if (Response.data.length) {
+      if (res.data.length) {
         this.setState({places: res.data.slice(0,10)});
       } else {
         this.createData();
