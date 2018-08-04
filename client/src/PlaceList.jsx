@@ -60,8 +60,8 @@ export default class PlaceList extends Component {
     console.log('component mounted!');
   }
 
-  createData (e) {
-    for (e = 0; e < 100; e++) {
+  createData () {
+    for (let e = 0; e < 100; e++) {
       axios.post('/api/yelp', {e: e})
       .then(() => console.log('created data #: ', e))
       .catch(err => console.log('error creating data: ', err));
@@ -77,7 +77,11 @@ export default class PlaceList extends Component {
     }
     axios.get('http://localhost:9001/api/yelp', payload)
     .then(res => {
-      this.setState({places: res.data.slice(0,10)});
+      if (Response.data.length) {
+        this.setState({places: res.data.slice(0,10)});
+      } else {
+        this.createData();
+      }
     })
     .catch(err => console.log('error sending get request to server: ', err));
   }

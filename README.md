@@ -1,7 +1,7 @@
 # also-viewed-restaurants
 Also Viewed Restaurants module in bottom sidebar
 
-# Create fake data in mongoDB
+# Create fake data in mongoDB (ignore - now automatically created if there is no data in db)
 STEP 1 - Start mongoDB process
 - In terminal type:
 mongod
