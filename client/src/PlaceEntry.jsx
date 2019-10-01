@@ -119,7 +119,7 @@ export default class PlaceEntry extends Component {
     else if (rating === 5) {starRating = styles.star5}
     return <span className={[styles.stars, starRating].join(' ')}></span>
 
-    // Styled Components
+    // // Styled Components
     // if (rating === 1) {return <Star1 />} 
     // else if (rating === 1.5) {return <Star15 />} 
     // else if (rating === 2) {return <Star2 />} 
@@ -161,5 +161,5 @@ export default class PlaceEntry extends Component {
   }
 }
 
-// Styled Components - exported Links style component
+// // Styled Components - exported Links style component
 // export default { PlaceEntry, Links };
